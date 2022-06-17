@@ -1,0 +1,96 @@
+
+$PC:1200px;
+$mini:992px;
+$Tb:767px;
+$Mb:600px;
+$media:820px;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+body,html{
+	scroll-behavior: smooth;
+	font-family: "Open Sans";
+	line-height: 136%;
+	color: #819EC7;
+	transition: all 0.3s linear;
+}
+img{
+	max-width: 100%;
+}
+a{
+	color: inherit;
+	user-select: none;
+	display: block;
+	white-space: nowrap;
+}
+///////////////////////
+
+.content{
+	margin: 0 auto;
+	max-width: 1780px;
+	padding: 0 50px;
+	@media (max-width: 1400px){
+		padding: 0 30px;
+	}
+	@media (max-width: 767px){
+		padding: 0 15px;
+	}	
+	@media (max-width: 600px){
+		padding: 0 10px;
+	}
+	
+}
+
+.wrapper{
+	position: relative;
+}
+
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+h1{
+	font-weight: 700;
+	@include adaptiv-font(64,24);
+	line-height: 100%;
+	color: #273B98;
+}
+
+h2{
+	font-weight: 700;
+	@include adaptiv-font(64,24);
+	line-height: 136%;
+	text-align: center;
+	color: #273B98;
+}
+
+.blue{
+	@include adaptiv-font(30,16);
+	line-height: 136%;
+	@media (max-width: $Mb){
+		text-align: center;
+	}
+	
+}
+
+
+h3{
+	color: #969696;
+	@include adaptiv-font(18,14);
+	line-height: 136%;
+	@media (max-width: $Mb){
+		text-align: center;
+	}
+}
+
+
+h4{
+	@include adaptiv-font(16,14);
+	line-height: 137%;
+	color: #969696;
+}
