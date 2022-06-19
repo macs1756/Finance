@@ -188,7 +188,6 @@ header {
   background-color: #fff;
   width: 100%;
   z-index: 6;
-  border-bottom: 1px solid #000;
 }
 
 .header {
@@ -589,7 +588,7 @@ main {
   }
 }
 
-.initial {
+.initial__net {
   padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,9 +740,15 @@ main {
   background: url(../img/search.svg) 95% center no-repeat;
 }
 
+@media (max-width: 1400px) {
+  .search__input input {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .search__input input {
-    padding-left: 25px;
     height: 60px;
     background: url(../img/search.svg) 95% center no-repeat;
   }
@@ -756,19 +761,38 @@ main {
 }
 
 .search__input input::-webkit-input-placeholder {
-  color: #D4DBF2;
+  color: #c3cae0;
+  font-size: 18px;
 }
 
 .search__input input:-ms-input-placeholder {
-  color: #D4DBF2;
+  color: #c3cae0;
+  font-size: 18px;
 }
 
 .search__input input::-ms-input-placeholder {
-  color: #D4DBF2;
+  color: #c3cae0;
+  font-size: 18px;
 }
 
 .search__input input::placeholder {
-  color: #D4DBF2;
+  color: #c3cae0;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .search__input input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .search__input input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .search__input input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .search__input input::placeholder {
+    font-size: 14px;
+  }
 }
 
 .search__input input:focus {
@@ -785,8 +809,9 @@ main {
 }
 
 .search__bth-list {
-  -webkit-animation: op2 0.5s linear 1 normal 0s forwards;
-          animation: op2 0.5s linear 1 normal 0s forwards;
+  pointer-events: none;
+  opacity: 0;
+  display: block;
   min-width: 300px;
   position: absolute;
   top: 100%;
@@ -829,46 +854,50 @@ main {
 }
 
 .activeList {
-  display: block;
-  -webkit-animation: op 0.3s linear 1 normal 0s forwards;
-          animation: op 0.3s linear 1 normal 0s forwards;
+  opacity: 1;
+  pointer-events: all;
 }
 
-@-webkit-keyframes op {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.initial__forum {
+  margin-top: 50px;
+  max-width: 405px;
 }
 
-@keyframes op {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+@media (max-width: 600px) {
+  .initial__forum {
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
 
-@-webkit-keyframes op2 {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+.initial__forum-p {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .initial__forum-p {
+    text-align: center;
   }
 }
 
-@keyframes op2 {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
+.initial__forum-btn {
+  padding: 21px 5px;
+  text-align: center;
+  width: 100%;
+  background: #273B98;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.initial__forum-btn:hover, .initial__forum-btn:active {
+  background: #213280;
+}
+
+footer {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */
