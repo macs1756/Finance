@@ -67,17 +67,23 @@ padding-right: 15px;
 	
 }
 .search__btn {
-	button{
+	position: relative;
+	
+.button{
+	transition: all 0.5s linear;
+		white-space: nowrap;
 		border: 1px solid #EAEFFF;
 		border-radius: 40px 0px 0px 40px;
 		height: 80px;
 		padding: 25px 145px 37px 40px;
 		color: #819EC7;
 		font-size: 18px;
-		background: #F8FAFF url(../img/initial__arrow.svg) 90% center no-repeat;
+		background: #F8FAFF url(../img/initial__arrow.svg) 93% center no-repeat;
 		@media (max-width: 1200px){
 		height: 60px;
-			padding: 15.5px 101.5px 27.9px 28px;
+			padding: 20px 71.5px 20px 28px;
+			font-size: 14px;
+			line-height: 100%;
 		}
 		@media (max-width: 992px){
 			width: 100%;
@@ -87,8 +93,27 @@ padding-right: 15px;
 			margin-bottom: 20px;
 			background: #F8FAFF url(../img/initial__arrow.svg) 93% center no-repeat;
 		}
+		&:hover{
+			@media(any-hover: hover){
+				background: #e9ebec url(../img/initial__arrow.svg) 93% center no-repeat;
+			}
+		}
+		&:active{
+				background: #e1e8eb url(../img/initial__arrow.svg) 93% center no-repeat;
+		}
+	
 		
+
+
 	}
+
+	.btnBorder{
+		border-radius: 0px;
+		transition: all 0.3s linear;
+}
+
+
+
 }
 .search__input {
 	flex:1 1 auto;
@@ -126,4 +151,70 @@ padding-right: 15px;
 		}
 	}
 }
+
+
+
+.search__bth-list {
+	animation: op2 0.5s linear 1 normal 0s forwards;
+	min-width: 300px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 2;
+	background-color: #F8FAFF;
+	padding-top: 10px;
+	@media (max-width: 992px){
+		position: absolute;
+		top: 60px;
+		left: 0;
+	}
+	@media (max-width: $Mb){
+		position: absolute;
+		top: 60px;
+		right: 0;
+		width: 100%;
+	}
+	
+	
+}
+
+.search__bth-list-item{
+	padding: 8px 10px 8px 28px;
+	border-bottom: 1px solid #E5E5E5;
+	&:hover{
+		@media(any-hover: hover){
+			background: #e9ebec;
+		}
+	}
+	&:active{
+			background: #e1e8eb;
+	}
+}
+
+
+.activeList{
+	display: block;
+	animation: op 0.3s linear 1 normal 0s forwards;
+}
+
+@keyframes op{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes op2{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		display: none;
+	}
+}
+
+
 
