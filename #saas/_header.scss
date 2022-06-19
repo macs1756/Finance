@@ -124,6 +124,7 @@ header{
 .burger__active{
 	display: none;
 	@media (max-width: $Mb){
+	scroll: auto;
 	display: block;
 	width: 100%;
 	height: 300px;
