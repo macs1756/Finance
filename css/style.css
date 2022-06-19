@@ -780,6 +780,8 @@ main {
 }
 
 .search__input {
+  position: relative;
+  z-index: 999;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -914,7 +916,7 @@ main {
 
 .initial__forum {
   position: relative;
-  z-index: 2;
+  z-index: 688;
   margin-top: 50px;
   max-width: 405px;
 }
@@ -965,6 +967,8 @@ footer {
 }
 
 .interesting {
+  position: relative;
+  z-index: 6;
   color: #fff;
   font-weight: 700;
   margin-top: -250px;
@@ -976,6 +980,24 @@ footer {
 @media (max-width: 1400px) {
   .interesting {
     padding-top: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .interesting {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .interesting {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .interesting {
+    padding-bottom: 20px;
   }
 }
 
@@ -1073,5 +1095,45 @@ footer {
 
 .interesting__text {
   font-size: calc(14px + 7 * ((100vw - 320px) / 1400));
+}
+
+.academy {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin-top: -50px;
+  background: #F8FAFF;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .academy {
+    padding-top: 85px;
+  }
+}
+
+.academy__title {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .academy__title {
+    margin-bottom: 20px;
+  }
+}
+
+.academy__p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .academy__p {
+    margin-bottom: 20px;
+  }
+}
+
+.academy__btn {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

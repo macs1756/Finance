@@ -117,7 +117,8 @@ padding-right: 15px;
 
 }
 .search__input {
-	
+	position: relative;
+	z-index: 999;
 	flex:1 1 auto;
 	input{
 		width: 100%;
@@ -216,7 +217,7 @@ opacity: 1;
 
 .initial__forum {
 	position: relative;
-	z-index: 2;
+	z-index: 688;
 	margin-top: 50px;
 	max-width: 405px;
 	@media (max-width: $Tb){
