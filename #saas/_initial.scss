@@ -1,6 +1,129 @@
 
 
 main{
-	margin-top: 150px;
+	margin-top: 120px;
+	@media (max-width: 1400px){
+		margin-top: 100px;
+	}
+	@media (max-width: $Tb){
+		margin-top: 80px;
+	}
+	@media (max-width: $Mb){
+		margin-top: 63px;
+	}
+	
+	
+	
+}
+
+.initial {
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.initial__item {
+	flex: 0 1 50%;
+}
+.initial__text {
+	flex: 0 1 55%;
+	@media (max-width: $Mb){
+		flex: 0 1 100%;
+	}
+	&-p{
+		margin-bottom: 60px;
+		@media (max-width: 992px){
+			margin-bottom: 20px;
+		}
+		
+	}
+	
+}
+.initial__img {
+	flex: 0 1 45%;
+	@media (max-width: $Mb){
+		display: none;
+	}
+	
+}
+
+
+
+
+.search {
+	display: flex;
+	padding-right: 30px;
+	@media (max-width: 992px){
+		flex-direction: column;
+padding-right: 15px;
+	}
+	@media (max-width: $Mb){
+		padding: 0 10px;
+	}
+	@media (max-width: 450px){
+		padding: 0;
+	}
+	
+	
+}
+.search__btn {
+	button{
+		border: 1px solid #EAEFFF;
+		border-radius: 40px 0px 0px 40px;
+		height: 80px;
+		padding: 25px 145px 37px 40px;
+		color: #819EC7;
+		font-size: 18px;
+		background: #F8FAFF url(../img/initial__arrow.svg) 90% center no-repeat;
+		@media (max-width: 1200px){
+		height: 60px;
+			padding: 15.5px 101.5px 27.9px 28px;
+		}
+		@media (max-width: 992px){
+			width: 100%;
+			border-radius: 30px;
+			padding-left: 25px ;
+			text-align: left;
+			margin-bottom: 20px;
+			background: #F8FAFF url(../img/initial__arrow.svg) 93% center no-repeat;
+		}
+		
+	}
+}
+.search__input {
+	flex:1 1 auto;
+	input{
+		width: 100%;
+		border: 1px solid #EAEFFF;
+		border-radius: 0px 40px 40px 0px;
+		height: 80px;
+		padding-left: 40px;
+		background: url(../img/search.svg) 95% center no-repeat;
+		@media (max-width: 1200px){
+			padding-left: 25px;
+			height: 60px;
+			background: url(../img/search.svg) 95% center no-repeat;
+		}
+		@media (max-width: 992px){
+			border-radius: 30px;
+		}
+		
+		
+
+
+
+		&::placeholder{
+			color:#D4DBF2;
+		}
+		&:focus{
+			border: 1px solid rgb(169, 169, 232);
+			background: #fff;
+			@media (max-width: 992px){
+				border-radius: 0 40px 40px 0;
+				transition: all 0.3s linear;
+			}
+			
+		}
+	}
 }
 

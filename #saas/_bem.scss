@@ -59,6 +59,16 @@ h1{
 	@include adaptiv-font(64,24);
 	line-height: 100%;
 	color: #273B98;
+	margin-bottom: 40px;
+	@media (max-width: $Tb){
+		margin-bottom: 20px;
+	}
+	
+	@media (max-width: $Mb){
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
 }
 
 h2{
@@ -67,6 +77,10 @@ h2{
 	line-height: 136%;
 	text-align: center;
 	color: #273B98;
+	@media (max-width: $Mb){
+		text-align: center;
+	}
+	
 }
 
 .blue{
