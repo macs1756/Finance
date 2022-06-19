@@ -301,10 +301,9 @@ header {
 
 @media (max-width: 600px) {
   .burger__active {
+    scroll: auto;
     display: block;
     width: 100%;
-    height: 300px;
-    background-color: red;
     position: absolute;
     top: 100%;
     left: 0;
@@ -495,6 +494,57 @@ header {
   .active__link {
     border-bottom: 2px solid #5277F7;
   }
+}
+
+.burger__active {
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.burger__bottom-wr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger__list {
+  margin-bottom: 20px;
+}
+
+.burger__list-link {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 13px 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.burger__list-link:active {
+  background-color: #c5c5c5;
+}
+
+.burger__bottom-btn {
+  margin-bottom: 20px;
+  background: linear-gradient(224.39deg, #35D5A5 2.1%, #00C7C5 32.94%, #2D9BE0 57.62%, #5277F7 71.52%, #5B75F6 79.13%, #7370F4 91.42%, #836DF3 98.23%);
+  border-radius: 50px;
+  color: #fff;
+  padding: 12px 35px;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.burger__social-netwowks img {
+  max-width: 40px;
+}
+
+.burger__social-netwowks img:not(:last-child) {
+  margin-right: 20px;
 }
 
 main {
