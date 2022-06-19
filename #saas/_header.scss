@@ -324,10 +324,11 @@ background-color: #fff;
 }
 
 .burger__social-netwowks {
-	img{
+	display: flex;
+	a{
 		max-width: 40px;
 	}
-	img:not(:last-child){
+	a:not(:last-child){
 		margin-right: 20px;
 	}
 }

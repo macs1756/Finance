@@ -51,6 +51,7 @@ main{
 
 
 .search {
+	
 	display: flex;
 	padding-right: 30px;
 	@media (max-width: 992px){
@@ -68,7 +69,7 @@ padding-right: 15px;
 }
 .search__btn {
 	position: relative;
-	
+
 .button{
 		transition: all 0.5s linear;
 		white-space: nowrap;
@@ -116,6 +117,7 @@ padding-right: 15px;
 
 }
 .search__input {
+	
 	flex:1 1 auto;
 	input{
 		width: 100%;
@@ -123,7 +125,7 @@ padding-right: 15px;
 		border-radius: 0px 40px 40px 0px;
 		height: 80px;
 		padding-left: 40px;
-		background: url(../img/search.svg) 95% center no-repeat;
+		background: #fff url(../img/search.svg) 95% center no-repeat;
 		@media (max-width: 1400px){
 			padding-left: 20px;
 			font-size: 20px;
@@ -131,7 +133,7 @@ padding-right: 15px;
 		
 		@media (max-width: 1200px){
 			height: 60px;
-			background: url(../img/search.svg) 95% center no-repeat;
+			background: #fff url(../img/search.svg) 95% center no-repeat;
 		}
 		@media (max-width: 992px){
 			border-radius: 30px;
@@ -171,7 +173,7 @@ padding-right: 15px;
 	position: absolute;
 	top: 100%;
 	left: 0;
-	z-index: 2;
+	z-index: 6;
 	background-color: #F8FAFF;
 	padding-top: 10px;
 	@media (max-width: 992px){
@@ -213,6 +215,8 @@ opacity: 1;
 
 
 .initial__forum {
+	position: relative;
+	z-index: 2;
 	margin-top: 50px;
 	max-width: 405px;
 	@media (max-width: $Mb){
@@ -225,8 +229,14 @@ opacity: 1;
 
 
 .initial__forum-p {
+	color: #fff;
 	margin-bottom: 20px;
 	font-style: italic;
+	@media (max-width: 992px){
+	
+	color: #537ab0;
+	}
+	
 	@media (max-width: $Mb){
 		text-align: center;
 	}

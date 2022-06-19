@@ -606,11 +606,17 @@ header {
   line-height: 100%;
 }
 
-.burger__social-netwowks img {
+.burger__social-netwowks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger__social-netwowks a {
   max-width: 40px;
 }
 
-.burger__social-netwowks img:not(:last-child) {
+.burger__social-netwowks a:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -785,7 +791,7 @@ main {
   border-radius: 0px 40px 40px 0px;
   height: 80px;
   padding-left: 40px;
-  background: url(../img/search.svg) 95% center no-repeat;
+  background: #fff url(../img/search.svg) 95% center no-repeat;
 }
 
 @media (max-width: 1400px) {
@@ -798,7 +804,7 @@ main {
 @media (max-width: 1200px) {
   .search__input input {
     height: 60px;
-    background: url(../img/search.svg) 95% center no-repeat;
+    background: #fff url(../img/search.svg) 95% center no-repeat;
   }
 }
 
@@ -864,7 +870,7 @@ main {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 2;
+  z-index: 6;
   background-color: #F8FAFF;
   padding-top: 10px;
 }
@@ -907,6 +913,8 @@ main {
 }
 
 .initial__forum {
+  position: relative;
+  z-index: 2;
   margin-top: 50px;
   max-width: 405px;
 }
@@ -919,8 +927,15 @@ main {
 }
 
 .initial__forum-p {
+  color: #fff;
   margin-bottom: 20px;
   font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .initial__forum-p {
+    color: #537ab0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -947,5 +962,40 @@ main {
 
 footer {
   margin-top: 100px;
+}
+
+.interesting {
+  color: #fff;
+  font-weight: 700;
+  margin-top: -250px;
+  padding-top: 470px;
+  height: 1000px;
+  background: url(../img/interesting.jpg) 100% 1%/cover no-repeat;
+}
+
+@media (max-width: 992px) {
+  .interesting {
+    margin-top: -250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .interesting {
+    background: linear-gradient(224.39deg, #35D5A5 2.1%, #00C7C5 32.94%, #2D9BE0 57.62%, #5277F7 71.52%, #5B75F6 79.13%, #7370F4 91.42%, #836DF3 98.23%);
+    margin-top: 40px;
+    position: relative;
+    padding-top: 30px;
+  }
+  .interesting:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 90%;
+    background-color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
