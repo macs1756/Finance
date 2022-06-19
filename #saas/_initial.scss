@@ -145,8 +145,8 @@ padding-right: 15px;
 
 		&::placeholder{
 			color:#c3cae0;
-			font-size: 18px;
-			@media (max-width: $Mb){
+			font-size: 17px;
+			@media (max-width: $Tb){
 				font-size: 14px;
 			}
 			
@@ -219,7 +219,7 @@ opacity: 1;
 	z-index: 2;
 	margin-top: 50px;
 	max-width: 405px;
-	@media (max-width: $Mb){
+	@media (max-width: $Tb){
 		margin: 0 auto;
 		margin-top: 20px;
 	}

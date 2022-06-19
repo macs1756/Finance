@@ -3,8 +3,12 @@
 	color: #fff;
 	font-weight: 700;
 	margin-top: -250px;
-	padding-top: 470px;
-height: 1000px;
+	padding-top: 380px;
+	padding-bottom: 123px;
+	@media (max-width: 1400px){
+	padding-top: 300px;
+	}
+	
 background: url(../img/interesting.jpg) 100% 1% /cover no-repeat;
 @media (max-width: 992px){
 	margin-top: -250px;
@@ -18,14 +22,62 @@ background: url(../img/interesting.jpg) 100% 1% /cover no-repeat;
 		content: "";
 		display: block;
 		width: 100%;
-		height: 30px;
+		height: 40px;
 		border-radius: 90%;
 		background-color: #fff;
 		position: absolute;
-		top: -15px;
+		top: -20px;
 		left: 0%;
+	}
+}
+}
+
+.interesting__title {
+	color: #fff;
+	margin-bottom: 60px;
+	@media (max-width: 992px){
+		margin-bottom: 40px;
+	}
+	@media (max-width: $Mb){
+		margin-bottom: 20px;
 	}
 }
 
 
+
+/////////net///////////////////////@
+
+
+.interesting__net {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.interesting__wr{
+	flex: 0 0 25%;
+	@media (max-width: $Mb){
+		flex: 0 0 50%;
+	}
+	
+}
+
+
+
+
+.interesting__item {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 40px;
+	@media (max-width: $Mb){
+		margin-bottom: 20px;
+	}
+	
+	
+}
+.interesting__text {
+	@include adaptiv-font(21,14);
 }
