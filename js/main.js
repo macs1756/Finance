@@ -40,3 +40,27 @@ listItem.forEach(content=>{
 });
 
 
+	new Swiper(".swiper",{
+	loop: true,
+	slidesPerView: 3,
+	spaceBetween: 20,
+	autohight: true,
+	pagination:{
+		el: ".dots",
+	},
+	breakpoints: {
+		20:{
+			slidesPerView: 1,
+		},
+		600:{
+			slidesPerView: 2,
+		},
+		992:{
+			slidesPerView: 3,
+			mousewheel:{
+				eventsTarget: ".swiper-wrapper"
+			},
+			freeMode: true,
+		},
+	},
+});

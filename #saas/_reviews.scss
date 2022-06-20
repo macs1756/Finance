@@ -1,0 +1,143 @@
+
+
+
+.reviews {
+	padding: 60px 0;
+	@media (max-width: 992px){
+		padding: 40px 0;
+	}
+	@media (max-width: $Mb){
+		padding: 20px 0;
+	}
+	
+}
+
+.reviews__title {
+	margin-bottom: 60px;
+	@media (max-width: 992px){
+		margin-bottom: 40px;
+	}
+	@media (max-width: $Mb){
+		margin-bottom: 20px;
+	}
+	
+}
+
+
+
+/////////////////////////////net card/////////////////
+
+
+
+.reviews__item {
+
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	max-width: 580px;
+	padding: 30px 30px 25px 30px;
+	background: #FFFFFF;
+	border: 1px solid #EAEFFF;
+	box-shadow: 0px 0px 10px #EAEFFF;
+	@media (max-width: $Mb){
+		padding: 20px;
+	}
+	
+}
+.reviews__title-wr {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	
+	
+}
+
+
+.item__companyUser {
+	font-weight: 700;
+	color: #273B98;
+	@include adaptiv-font(24,16);
+	margin-bottom: 5px;
+}
+.item__user {
+	font-size: 14px;
+	color: #819EC7;
+	margin-bottom: 35px;
+	@media (max-width: 1200px){
+		margin-bottom: 10px;
+	}
+	
+	&:hover{
+		text-decoration: underline;
+	}
+	@media (max-width: $Mb){
+		margin-bottom: 20px;
+	}
+	
+}
+
+.reviews__title-folowers {
+	padding-top: 5px;
+	@media (max-width: 1200px){
+		flex: 0 0 100px;
+	}
+	
+	@media (max-width: $Mb){
+		margin-bottom: 10px;
+	}
+	
+}
+
+
+.reviews__item-main{
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.item__main-title {
+	font-weight: 700;
+	color: #333333;
+	font-size: 16px;
+	margin-bottom: 10px;
+	@media (max-width: $Mb){
+		font-size: 14px;
+	}
+	
+}
+.item__main-p {
+	margin-bottom: 10px;
+	flex: 1 1 100%;
+}
+.item__main-btn {
+	font-size: 14px;
+	color: #5277F7;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+
+
+.dots{
+	display: none;
+	@media (max-width: $Mb){
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		
+	}
+	
+}
+
+.swiper-pagination-bullet{
+	background: #D4DBF2;
+border-radius: 10px;
+width: 15px;
+height: 15px;
+}
+
+.swiper-pagination-bullet-active{
+	background: #273B98;
+}

@@ -7,9 +7,16 @@
 	background: #F8FAFF;
 	position: relative;
 	z-index: 1;
+	@media (max-width: 1200px){
+		padding-bottom: 75px;
+	}
 	
 	@media (max-width: 992px){
 		padding-top: 85px;
+		padding-bottom: 65px;
+	}
+	@media (max-width: $Mb){
+		padding-bottom: 50px;
 	}
 	
 }
@@ -34,7 +41,29 @@
 		
 }
 
+.academy__btn-wr{
+	width:  100%;
+	display: flex;
+	justify-content: center;
+}
+
 
 .academy__btn{
+	display: inline-block;
 	text-align: center;
+	font-weight: 700;
+	@include adaptiv-font(30,16);
+line-height: 100%;
+color: #FFFFFF;
+background: linear-gradient(224.39deg, #35D5A5 2.1%, #00C7C5 32.94%, #2D9BE0 57.62%, #5277F7 71.52%, #5B75F6 79.13%, #7370F4 91.42%, #836DF3 98.23%);
+border-radius: 40px;
+padding: 25px 125px;
+@media (max-width: 992px){
+	padding: 19px 100px;
+}
+
+@media (max-width: $Mb){
+	padding: 12px 77px;
+}
+
 }
