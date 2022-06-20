@@ -235,7 +235,7 @@ header {
   left: 0;
   background-color: #fff;
   width: 100%;
-  z-index: 6;
+  z-index: 150;
 }
 
 .header {
@@ -374,6 +374,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 150;
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
     -webkit-transition: all 0.3s linear;
@@ -781,7 +782,7 @@ main {
 
 .search__input {
   position: relative;
-  z-index: 999;
+  z-index: 99;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -872,7 +873,7 @@ main {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 6;
+  z-index: 120;
   background-color: #F8FAFF;
   padding-top: 10px;
 }
@@ -916,7 +917,7 @@ main {
 
 .initial__forum {
   position: relative;
-  z-index: 688;
+  z-index: 99;
   margin-top: 50px;
   max-width: 405px;
 }
