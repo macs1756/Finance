@@ -45,6 +45,9 @@ listItem.forEach(content=>{
 	slidesPerView: 3,
 	spaceBetween: 20,
 	autohight: true,
+	navigation: {
+		nextEl: ".arrow__next",
+	},
 	pagination:{
 		el: ".dots",
 	},
@@ -57,9 +60,6 @@ listItem.forEach(content=>{
 		},
 		992:{
 			slidesPerView: 3,
-			mousewheel:{
-				eventsTarget: ".swiper-wrapper"
-			},
 			freeMode: true,
 		},
 	},
