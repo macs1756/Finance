@@ -8,6 +8,19 @@ btnBurger.addEventListener("click", item =>{
 		contentBurger.classList.toggle("burger__open");
 });
 
+/////
+const burgerBtnAll = document.querySelectorAll(".burger__list-item");
+
+burgerBtnAll.forEach(item=>{
+	item.addEventListener("click", closeBurger=>{
+		btnBurger.classList.toggle("header__burger_close");
+		contentBurger.classList.toggle("burger__open");
+	});
+});
+
+
+
+
 
 //initial list 
 
@@ -81,7 +94,7 @@ breakpoints:{
 320:{
 	slidesPerView: 1,
 },
-640:{
+620:{
 	slidesPerView: 2,
 	spaceBetween: 20,
 },
