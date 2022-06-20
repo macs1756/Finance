@@ -64,3 +64,32 @@ listItem.forEach(content=>{
 		},
 	},
 });
+
+
+
+new Swiper(".command__swiper",{
+	loop: true,
+	slidesPerView: 3,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: ".arrow__next",
+	},
+	pagination:{
+		el: ".command__dots",
+	},
+breakpoints:{
+320:{
+	slidesPerView: 1,
+},
+640:{
+	slidesPerView: 2,
+	spaceBetween: 20,
+},
+950:{
+	slidesPerView: 3,
+},
+1400:{
+	slidesPerView: 4,
+},
+},
+});

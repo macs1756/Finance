@@ -1454,4 +1454,151 @@ footer {
   text-align: center;
   color: #fff;
 }
+
+.command {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 60px;
+}
+
+@media (max-width: 992px) {
+  .command {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .command {
+    margin-top: 20px;
+  }
+}
+
+.command__title {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1400px) {
+  .command__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .command__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .command__title {
+    margin-bottom: 20px;
+  }
+}
+
+.command__p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .command__p {
+    margin-bottom: 20px;
+  }
+}
+
+.command__slide {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  padding-bottom: 5px;
+  max-width: 600px;
+  border: 1px solid #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #EAEFFF;
+  -webkit-box-shadow: 0px 0px 10px #EAEFFF;
+          box-shadow: 0px 0px 10px #EAEFFF;
+}
+
+@media (max-width: 600px) {
+  .command__slide {
+    padding: 20px 18px;
+    padding-bottom: 5px;
+  }
+}
+
+.command__slide-img {
+  max-width: 260px;
+  min-height: 260px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.command__slide-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.command__slide-btn {
+  color: #819EC7;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #EAEFFF;
+}
+
+@media (max-width: 600px) {
+  .command__slide-btn {
+    padding-bottom: 17px;
+  }
+}
+
+.command__slide-p {
+  margin-top: 30px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+  .command__slide-p {
+    margin-top: 20px;
+  }
+}
+
+.dots__command {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.command__swiper {
+  overflow: hidden;
+}
+
+.command__dots {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .command__dots {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */
