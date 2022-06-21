@@ -163,7 +163,8 @@ height: 15px;
 	display: block;
 	width: 50px;
 	height: 50px;
-	background: #273B98 url(../img/initial__arrow.svg) center 57% no-repeat;
+	background: rgba(#273B98, 0.7) url(../img/initial__arrow.svg) center 57% no-repeat;
+	transition: all 0.3 linear;
 	transform: rotate(-90deg);
 	border-radius: 50%;
 	@media (max-width: $Tb){
@@ -171,5 +172,8 @@ height: 15px;
 		height: 36px;
 		background-size: 50%;
 	}
-	
+	&:hover{
+		background: rgba(#273B98, 1) url(../img/initial__arrow.svg) center 57% no-repeat;
+		transition: all 0.3 linear;
+	}
 }

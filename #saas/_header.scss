@@ -176,6 +176,11 @@ header{
 	padding: 19px 61px 23px 61px;
 	font-weight: 700;
 	font-size: 18px;
+	transition: all 0.7s linear;
+	&:hover, &:active{
+		background: linear-gradient(224.39deg, #2cbe92 2.1%, #04aeab 32.94%, #2083c1 57.62%, #314cb0 71.52%, #2644dc 79.13%, #514fd2 91.42%, #5f46dc 98.23%);
+		transition: all 0.7s linear;
+	}
 	@media (max-width: 1550px){
 		padding: 13px 20px 12px 20px;
 		font-size: 14px;
@@ -264,7 +269,7 @@ header{
 }
 .header__list-link {
 	font-size: 21px;
-
+	transition: all 0.3s linear;
 	@media (max-width: 1200px){
 		font-size: 16px;
 	}
@@ -278,11 +283,12 @@ header{
 	
 	&:hover{
 		color: #3353c4;
-	
+		transition: all 0.3s linear;
 	}
 }
 
 .active__link{
+	padding-bottom: 6px;
 	border-bottom: 3px solid #5277F7;
 	@media (max-width: $Tb){
 		border-bottom: 2px solid #5277F7;
@@ -322,6 +328,8 @@ background-color: #fff;
 	padding: 12px 35px;
 	font-size: 16px;
 	line-height: 100%;
+	transition: all 0.3s linear;
+
 }
 
 .burger__social-netwowks {

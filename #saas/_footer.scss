@@ -1,5 +1,116 @@
 
 
 footer{
-	margin-top: 100px;
+	padding: 30px 0;
+	margin-top: 60px;
+	border-top:	1px solid #EAEFFF;
+	@media (max-width: 992px){
+		margin-top: 40px;
+	}	
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 1200px){
+		flex-direction: column;
+
+	}
+	
+}
+.footer__politic {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #819EC7;
+	
+	@media (max-width: 1200px){
+		margin-bottom: 20px;
+	}
+	@media (max-width: $Mb){
+		flex-direction: column;
+		
+	}
+	
+	@include adaptiv-font(21,14);
+	font-style: italic;
+	a{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.footer__politic-first {
+	margin-right: 40px;
+	@media (max-width: 1500px){
+		margin-right: 20px;
+	}
+	@media (max-width: $Mb){
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+}
+.footer__politic-second {
+	margin-right: 10px;
+	@media (max-width: 1500px){
+		margin-right: 20px;
+	}
+	@media (max-width: 1200px){
+		margin-right: 0;
+	}
+	
+
+}
+.footer__btn {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	@media (max-width: $Mb){
+		flex-direction: column;
+	}
+	
+}
+.footer__btn-social-networks {
+	display: flex;
+	gap: 20px;
+}
+.footer__btn-btn {
+	margin-left: 40px;
+
+	@media (max-width: 1500px){
+		margin-left: 20px;
+	}
+	@media (max-width: $Mb){
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	
+}
+
+
+.footer__main-btn {
+	background: linear-gradient(224.39deg, #35D5A5 2.1%, #00C7C5 32.94%, #2D9BE0 57.62%, #5277F7 71.52%, #5B75F6 79.13%, #7370F4 91.42%, #836DF3 98.23%);
+	border-radius: 40px;
+	padding: 17px 93px;
+	color: #fff;
+	font-weight: 700;
+
+	@media (max-width: 1500px){
+		padding: 14px 70px;
+	}
+	@media (max-width: 992px){
+		padding: 12px 54px;
+	}
+	
+	
+	@include adaptiv-font(18,16);
+	@media (max-width: $Mb){
+		line-height: 100%;
+	}
+	&:hover{
+		
+		background: linear-gradient(224.39deg, #0d6047 2.1%, #00C7C5 32.94%, #0b4d76 57.62%, #2647c1 71.52%, #354fd0 79.13%, #2d2baa 91.42%, #4025c6 98.23%);
+	}
 }

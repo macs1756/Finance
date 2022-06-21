@@ -57,6 +57,7 @@ line-height: 100%;
 color: #FFFFFF;
 background: linear-gradient(224.39deg, #35D5A5 2.1%, #00C7C5 32.94%, #2D9BE0 57.62%, #5277F7 71.52%, #5B75F6 79.13%, #7370F4 91.42%, #836DF3 98.23%);
 border-radius: 40px;
+transition: all 0.5s linear;
 padding: 25px 125px;
 @media (max-width: 992px){
 	padding: 19px 100px;
@@ -65,5 +66,8 @@ padding: 25px 125px;
 @media (max-width: $Mb){
 	padding: 12px 77px;
 }
-
+&:hover{
+	transition: all 0.5s linear;
+	background: linear-gradient(224.39deg, #209b76 2.1%, #029b99 32.94%, #18618f 57.62%, #1b3fc3 71.52%, #273dab 79.13%, #302eaf 91.42%, #6148de 98.23%);
+}
 }
