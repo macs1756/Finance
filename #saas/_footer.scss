@@ -36,8 +36,10 @@ footer{
 	@include adaptiv-font(21,14);
 	font-style: italic;
 	a{
-		&:hover{
-			text-decoration: underline;
+		@media(any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -88,6 +90,9 @@ footer{
 	}
 	
 }
+
+
+
 
 
 .footer__main-btn {
